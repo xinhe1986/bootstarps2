@@ -28,6 +28,11 @@
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 col-xl-2 mt=4">
+                        <button type="button" class="btn btn-primary" href="#reserveForm" >Reserve Campsite</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -68,8 +73,13 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="/img/react-lake-thumb.jpg" alt="react-lake-thumb" />
+                </div>   
             </div>
         </div>
 
@@ -83,6 +93,55 @@
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Task 2 step 3: Just above that closing </div> tag(step 2), add a new div element with a class attribute of "row row-content" in the start tag. This will add another row to this container.-->
+        <div class="row row-content">
+            <!--Task 2 step 4: add a column div with its requirements-->
+            <div class="mx-auto col-sm-9 col-lg-5">
+                <!--Task 2 step 5: add a card div with the Bootstrap card class-->
+                <div class="card">
+                    <!--Task 2 step 6: add a h3 element with a card-header class, containing the text "Reserve a Campsite"-->
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <!--Task 2 step 7: add a div with the card-body class-->
+                    <div class="card-body">
+                        <!--Task 2 step 8: Inside the card-body, create a form with the HTML form element-->
+                        <form action="" id="reserveForm">
+                            <!--Task 2 step 9: creat two row dives-->
+                            <div class="row mb-3">
+                                <!--by deleting the div here in line 118 and add col-sm-6 in line 120, the "number of campers are in the same line". -->
+                                    <!--Task 2 step 10: 7 small tasks in this step-->
+                                    <label class="col-form-label col-sm-6" for="nuCampers">Number of Campers</label>
+                                    <div class="col-sm-6">
+                                        <select name="numCampers" id="numCampers" class="form-control">
+                                            <option>Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                
+                            </div>
+                            <!--I still feel confused about XS Viewport and SM Viewports, doesn't know how to fix it here-->
+                            <div class="row mb-3">
+                                <!--delete this line <div class="col-md-12"> and add col-sm-6 in line 138-->
+                                    <!--Task 2 Step 11: Inside the second row, add a label with the text content "Date" and...-->
+                                    <label for="date" class="col-form-label col-sm-6">Date</label>
+                                    <div class="col-sm-6">
+                                        <input type="date" name="date" id="date" placeholder="mm/dd/yy" class="form-control"/>
+                                    </div>
+                                
+                            </div>
+                            <!--Task 2 Step 12,13: Add a third row in the form, and -->
+                            <div class="col mb-3">
+                                <button type="submit" class="bg-primary text-white">Search</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

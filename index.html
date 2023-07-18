@@ -304,10 +304,10 @@
     })
 </script>-->
 <script>
-    $(function() {
-        $(function() {
-            $(".carousel").carousel( { interval: 500 } );
-            $("#carouselButton").click(function(){
+    $(function () {
+        $(function () {
+            $(".carousel").carousel({ interval: 500 });
+            $("#carouselButton").click(function () {
                 if ($("#carouselButton").children("i").hasClass("fa-pause")) {
                     $(".carousel").carousel("pause");
                     $("#carouselButton").children("i").removeClass("fa-pause");
@@ -315,7 +315,7 @@
                 } else {
                     $(".carousel").carousel("cycle");
                     $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause"); 
+                    $("#carouselButton").children("i").addClass("fa-pause");
                 }
             });
         });

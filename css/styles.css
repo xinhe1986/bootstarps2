@@ -64,12 +64,12 @@ a:hover {
   z-index: 100;
 }
 
-#reserveButton .modal-header {
+#reserveModal .modal-header {
   background-color: #17A2B8;
   color: white;
 }
 
-#loginButton .modal-header {
+#loginModal .modal-header {
   background-color: #901CAD;
   color: white;
 }

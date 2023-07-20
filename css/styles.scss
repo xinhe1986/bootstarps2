@@ -76,13 +76,13 @@ a:hover {
     bottom: 0;
     z-index: 100;
 }
-#reserveButton {
+#reserveModal {
     .modal-header {
        background-color:$color-teal; 
        color: white;
     }
 }
-#loginButton {
+#loginModal {
     .modal-header {
         background-color:$color-mid;
         color: white;
